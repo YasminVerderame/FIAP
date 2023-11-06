@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/bemVindoFragment">
+
+    <fragment
+        android:id="@+id/bemVindoFragment"
+        android:name="br.com.fiap.checkpoint.presentation.BemVindoFragment"
+        android:label="BemVindoFragment"
+        tools:layout="@layout/fragment_bem_vindo">
+        <action
+            android:id="@+id/action_bemVindoFragment_to_paisListFragment"
+            app:destination="@id/paisListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/paisListFragment"
+        android:name="br.com.fiap.checkpoint.presentation.PaisListFragment"
+        android:label="PaisListFragment"
+        tools:layout="@layout/fragment_pais_list" />
+</navigation>
