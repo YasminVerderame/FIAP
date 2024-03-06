@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin32">32dp</dimen>
+    <dimen name="margin24">24dp</dimen>
+    <dimen name="spacing_4dp">4dp</dimen>
+    <dimen name="spacing_8dp">8dp</dimen>
+    <dimen name="spacing_24dp">24dp</dimen>
+    <dimen name="icon_size32dp">32dp</dimen>
+    <dimen name="icon_size">32dp</dimen>
+    <dimen name="margin30">30dp</dimen>
+    <dimen name="spacing_72dp">72dp</dimen>
+    <dimen name="margin48">48dp</dimen>
+    <dimen name="margin200">200dp</dimen>
+</resources>

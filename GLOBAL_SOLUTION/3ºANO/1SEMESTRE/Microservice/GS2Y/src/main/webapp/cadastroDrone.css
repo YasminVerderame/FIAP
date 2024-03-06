@@ -1,0 +1,73 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;800&display=swap');
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat';
+}
+
+.form-cadastro{
+	display:flex;
+	
+}
+
+h1{
+  font-size: 30px;
+  margin: 20px 0px;
+  color: #80ED99;
+  margin-bottom: 22px;
+}
+
+form{
+  width: 50%;
+  position: relative;
+  top: 25px;
+  padding: 0px 130px;
+}
+
+input{
+  height: 16px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #3333;
+  color: #333333;
+}
+
+label{
+	font-weight: 600;
+	color: #22577A;
+	margin-bottom: 15px;
+}
+
+
+.button{
+  border: none;
+  width: 171px;
+  height: 42px;
+  color: #fff;
+  background-color: #80ED99;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.button:hover{
+	background-color: #22577A;
+}
+
+.back{
+    background-color: #d9dddc;
+}
+
+.buttons{
+	display: flex;
+	align-items: center;
+    justify-content: space-evenly;
+}
+
+

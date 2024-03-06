@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/lightGreen"
+    >
+
+
+
+    <TextView
+        android:id="@+id/text_view_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="@string/cadastrarDrone"
+        android:layout_marginBottom="@dimen/margin200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+
+        />
+
+    <Button
+        android:id="@+id/cadastroButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastrarButton"
+        app:layout_constraintTop_toBottomOf="@id/text_view_cadastro"
+        app:layout_constraintStart_toStartOf="@id/text_view_cadastro"
+        app:layout_constraintEnd_toEndOf="@id/text_view_cadastro"
+android:drawableRight="@drawable/baseline_cadastrar"
+
+        ></Button>
+
+    <TextView
+        android:id="@+id/text_view_comprar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="18dp"
+        android:text="@string/projetoDrones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cadastroButton"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+
+        android:textColor="@color/black"
+
+        />
+
+    <Button
+        android:id="@+id/comprarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/projetoButton"
+        app:layout_constraintTop_toBottomOf="@id/text_view_comprar"
+        app:layout_constraintStart_toStartOf="@id/text_view_comprar"
+        app:layout_constraintEnd_toEndOf="@id/text_view_comprar"
+      android:drawableRight="@drawable/baseline_mais_sobre"
+        ></Button>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

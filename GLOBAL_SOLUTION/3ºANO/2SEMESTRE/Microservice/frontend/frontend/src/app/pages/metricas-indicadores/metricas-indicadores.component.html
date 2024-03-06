@@ -1,0 +1,40 @@
+<div class="metricas-indicadores">
+
+  <div class="metricas-indicadores__content-1">
+    <h1>Métricas por indicador</h1>
+    <p>Selecione um indicador para ver as métricas:</p>
+    <div class="metricas-indicadores__toggle">
+      <div class="metricas-indicadores__toggle-action">
+        <div class="slide-tab" *ngFor="let indicador of indicadores" (click)="toggleIndicador(indicador.id)"
+          [ngClass]="{ 'active': selectedId === indicador.id, 'blue': selectedId === indicador.id }">
+          {{ indicador.id }}
+        </div>
+      </div>
+    </div>
+    <img src="/assets/images/undraw_data_re_80ws.svg" alt="">
+  </div>
+
+  <div class="metricas-indicadores__content">
+    <div *ngFor="let indicador of indicadores">
+      <div *ngIf="selectedId === indicador.id">
+        <h2>{{ indicador.descricao }}</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Região</th>
+              <th>Taxa</th>
+              <th>Ano</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let regiao of indicador.regiao">
+              <td>{{ regiao.nomeRegiao }}</td>
+              <td>{{ regiao.consumo }}</td>
+              <td>{{ regiao.ano }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.custom-toast-success {
+  background-color: #4caf50;
+  color: white;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  border-radius: 10px;
+  width: 280px;
+  height: 30px;
+  padding: 10px;
+}
+
+.custom-toast-error {
+  background-color: #f44336;
+  color: white;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  border-radius: 10px;
+  width: 280px;
+  height: 30px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}

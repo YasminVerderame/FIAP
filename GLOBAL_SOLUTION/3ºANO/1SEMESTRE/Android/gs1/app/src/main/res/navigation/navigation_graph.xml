@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@+id/MenuFragment"
+    >
+
+    <fragment
+        android:id="@+id/DroneFragment"
+        android:name="br.com.fiap.GS.Fragments.DroneFragment"
+        />
+
+    <fragment
+        android:id="@+id/RegisterDroneFragment"
+        android:name="br.com.fiap.GS.Fragments.RegisterDroneFragment"
+        />
+
+    <fragment
+        android:id="@+id/MenuFragment"
+        android:name="br.com.fiap.GS.Fragments.MenuFragment"
+        />
+
+
+    <fragment
+        android:id="@+id/BuyDroneFragment"
+        android:name="br.com.fiap.GS.Fragments.ProjectFragment"
+        />
+
+
+    <action
+        android:id="@+id/action_to_RegisterDroneFragment"
+        app:destination="@+id/RegisterDroneFragment"
+        />
+
+    <action
+        android:id="@+id/action_to_backToMenu"
+        app:destination="@+id/MenuFragment"
+        />
+
+    <action
+        android:id="@+id/action_to_listDrones"
+        app:destination="@+id/DroneFragment"
+        />
+
+    <action
+        android:id="@+id/action_to_DroneProject"
+        app:destination="@+id/BuyDroneFragment"
+        />
+
+
+
+
+
+
+
+</navigation>

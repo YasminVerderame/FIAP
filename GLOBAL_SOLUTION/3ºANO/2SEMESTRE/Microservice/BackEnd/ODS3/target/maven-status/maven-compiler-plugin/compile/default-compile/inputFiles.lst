@@ -1,0 +1,15 @@
+D:\User\Desktop\global-solution-2\Microservice\BackEnd\ODS3\src\main\java\br\com\fiap\ODS3\DTO\DtoIndicadores.java
+D:\User\Desktop\global-solution-2\Microservice\BackEnd\ODS3\src\main\java\CorsConfiguration.java
+D:\User\Desktop\global-solution-2\Microservice\BackEnd\ODS3\src\main\java\br\com\fiap\ODS3\Ods3Application.java
+D:\User\Desktop\global-solution-2\Microservice\BackEnd\ODS3\src\main\java\br\com\fiap\ODS3\Controllers\ODS3Controller.java
+D:\User\Desktop\global-solution-2\Microservice\BackEnd\ODS3\src\main\java\br\com\fiap\ODS3\DTO\DtoRegiao.java
+D:\User\Desktop\global-solution-2\Microservice\BackEnd\ODS3\src\main\java\br\com\fiap\ODS3\Entities\Regiao.java
+D:\User\Desktop\global-solution-2\Microservice\BackEnd\ODS3\src\main\java\br\com\fiap\ODS3\DTO\DtoOds3ListaId.java
+D:\User\Desktop\global-solution-2\Microservice\BackEnd\ODS3\src\main\java\br\com\fiap\ODS3\Entities\Indicadores.java
+D:\User\Desktop\global-solution-2\Microservice\BackEnd\ODS3\src\main\java\br\com\fiap\ODS3\Repositories\Ods3Repository.java
+D:\User\Desktop\global-solution-2\Microservice\BackEnd\ODS3\src\main\java\br\com\fiap\ODS3\Repositories\IndicadoresRepository.java
+D:\User\Desktop\global-solution-2\Microservice\BackEnd\ODS3\src\main\java\br\com\fiap\ODS3\Repositories\RegiaoRepository.java
+D:\User\Desktop\global-solution-2\Microservice\BackEnd\ODS3\src\main\java\br\com\fiap\ODS3\DTO\DtoOds3.java
+D:\User\Desktop\global-solution-2\Microservice\BackEnd\ODS3\src\main\java\br\com\fiap\ODS3\Entities\Objetivos.java
+D:\User\Desktop\global-solution-2\Microservice\BackEnd\ODS3\src\main\java\br\com\fiap\ODS3\Entities\ODS3.java
+D:\User\Desktop\global-solution-2\Microservice\BackEnd\ODS3\src\main\java\br\com\fiap\ODS3\DTO\DtoIndicadoresOds3.java

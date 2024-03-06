@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="@dimen/spacing_8dp"
+    app:cardCornerRadius="@dimen/spacing_8dp"
+    android:layout_marginTop="@dimen/spacing_4dp"
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/spacing_8dp"
+        android:background="@color/lightGreen"
+        >
+
+        <TextView
+            android:id="@+id/droneNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nameDrone"
+            android:layout_marginStart="@dimen/spacing_4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/TextAppearance.AppCompat.Body2"
+            />
+
+        <TextView
+            android:id="@+id/droneNameValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="@string/description"
+            android:layout_marginStart="@dimen/spacing_8dp"
+            app:layout_constraintStart_toEndOf="@+id/droneNameLabel"
+
+            app:layout_constraintTop_toTopOf="@+id/droneNameLabel"
+            app:layout_constraintBottom_toBottomOf="@+id/droneNameLabel"
+            style="@style/TextAppearance.AppCompat.Caption"
+            />
+
+        <TextView
+            android:id="@+id/droneModelLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/modelDrone"
+            android:layout_marginTop="@dimen/spacing_8dp"
+            android:layout_marginStart="@dimen/spacing_4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/droneNameLabel"
+            style="@style/TextAppearance.AppCompat.Body2"
+            />
+
+        <TextView
+            android:id="@+id/droneModelValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="@string/description"
+            android:layout_marginStart="@dimen/spacing_8dp"
+            app:layout_constraintStart_toEndOf="@+id/droneModelLabel"
+
+            app:layout_constraintTop_toTopOf="@+id/droneModelLabel"
+            app:layout_constraintBottom_toBottomOf="@+id/droneModelLabel"
+            style="@style/TextAppearance.AppCompat.Caption"
+            />
+
+        <TextView
+            android:id="@+id/droneDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dataDrone"
+            android:layout_marginTop="@dimen/spacing_8dp"
+            android:layout_marginStart="@dimen/spacing_4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/droneModelLabel"
+            style="@style/TextAppearance.AppCompat.Body2"
+            />
+
+        <TextView
+            android:id="@+id/droneDateValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="@string/description"
+            android:layout_marginStart="@dimen/spacing_8dp"
+            app:layout_constraintStart_toEndOf="@+id/droneDateLabel"
+
+            app:layout_constraintTop_toTopOf="@+id/droneDateLabel"
+            app:layout_constraintBottom_toBottomOf="@+id/droneDateLabel"
+            style="@style/TextAppearance.AppCompat.Caption"
+            />
+
+        <TextView
+            android:id="@+id/droneBatteryLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/batteryDrone"
+            android:layout_marginTop="@dimen/spacing_8dp"
+            android:layout_marginStart="@dimen/spacing_4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/droneDateLabel"
+            style="@style/TextAppearance.AppCompat.Body2"
+            />
+
+        <TextView
+            android:id="@+id/droneBatteryValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="@string/description"
+            android:layout_marginStart="@dimen/spacing_8dp"
+            app:layout_constraintStart_toEndOf="@+id/droneBatteryLabel"
+
+            app:layout_constraintTop_toTopOf="@+id/droneBatteryLabel"
+            app:layout_constraintBottom_toBottomOf="@+id/droneBatteryLabel"
+            style="@style/TextAppearance.AppCompat.Caption"
+            />
+
+        <TextView
+            android:id="@+id/droneNumSerieLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/serieDrone"
+            android:layout_marginTop="@dimen/spacing_8dp"
+            android:layout_marginStart="@dimen/spacing_4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/droneBatteryLabel"
+            style="@style/TextAppearance.AppCompat.Body2"
+            />
+
+        <TextView
+            android:id="@+id/droneNumSerieValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="@string/description"
+            android:layout_marginStart="@dimen/spacing_8dp"
+            app:layout_constraintStart_toEndOf="@+id/droneNumSerieLabel"
+            app:layout_constraintTop_toTopOf="@+id/droneNumSerieLabel"
+            app:layout_constraintBottom_toBottomOf="@+id/droneNumSerieLabel"
+            style="@style/TextAppearance.AppCompat.Caption"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

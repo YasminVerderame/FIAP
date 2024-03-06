@@ -1,0 +1,15 @@
+br\com\fiap\ODS3\Entities\Indicadores.class
+br\com\fiap\ODS3\DTO\DtoOds3.class
+br\com\fiap\ODS3\DTO\DtoOds3ListaId.class
+br\com\fiap\ODS3\Repositories\RegiaoRepository.class
+br\com\fiap\ODS3\Controllers\ODS3Controller.class
+br\com\fiap\ODS3\Entities\ODS3.class
+br\com\fiap\ODS3\Ods3Application.class
+br\com\fiap\ODS3\DTO\DtoIndicadores.class
+br\com\fiap\ODS3\Entities\Objetivos.class
+br\com\fiap\ODS3\Entities\Regiao.class
+br\com\fiap\ODS3\DTO\DtoRegiao.class
+br\com\fiap\ODS3\DTO\DtoIndicadoresOds3.class
+CorsConfiguration.class
+br\com\fiap\ODS3\Repositories\IndicadoresRepository.class
+br\com\fiap\ODS3\Repositories\Ods3Repository.class

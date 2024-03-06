@@ -1,0 +1,17 @@
+<div class="home">
+    <div class="home__content">
+        <div class="home__img">
+            <img src="/assets/images/undraw_medicine_b-1-ol.svg" alt="">
+        </div>
+        <div class="home__text-info">
+            <h1>Objetivos de Desenvolvimento Sustentável (ODS 3)</h1>
+            <p>Selecione o ODS 3 para saber mais detalhes</p>
+
+            <div class="home__cards">
+                <div class="home__card" (click)="openObjetivos(objetivo.id)" *ngFor="let objetivo of objetivos">
+                    <h2>{{ objetivo.id }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

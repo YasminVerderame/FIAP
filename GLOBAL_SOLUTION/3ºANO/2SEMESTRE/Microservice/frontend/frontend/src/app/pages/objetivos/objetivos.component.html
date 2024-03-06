@@ -1,0 +1,25 @@
+<div class="objetivos">
+    <h1> Objetivos de Desenvolvimento Sustentável - {{ objetivo.id }}</h1>
+    <div class="objetivos__content">
+        <div class="objetivos__type">
+            <div class="objetivos__global">
+                <h2>Objetivo Global</h2>
+                <p> {{ objetivo.objetivos.global }}</p>
+            </div>
+            <div class="objetivos__global">
+                <h2>Objetivo Brasil</h2>
+                <p> {{ objetivo.objetivos.brasil }}</p>
+            </div>
+        </div>
+
+        <div class="objetivos__indicadores">
+            <div class="objetivos__img">
+                <img src="/assets/images/undraw_visual_data_re_mxxo.svg" alt="">
+            </div>
+          <div class="objetivos__button">
+            <button (click)="openMetricsScreen()">Ver Métricas</button> 
+            <button (click)="goBack()" class="btn-voltar">Voltar</button>
+          </div>
+        </div>
+    </div>
+</div>

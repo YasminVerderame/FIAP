@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Gabriel_M_Basaglia_RM88632</string>
+    <string name="nameDrone">Nome do drone</string>
+    <string name="modelDrone">Modelo do drone</string>
+    <string name="dataDrone">Data de compra</string>
+    <string name="batteryDrone">Capacidade da bateria</string>
+    <string name="serieDrone">Número de série do drone</string>
+    <string name="hide_button_label">Esconder</string>
+    <string name="show_button_label">Exibir</string>
+    <string name="drone_name_label">Nome</string>
+    <string name="drone_model_label">Modelo</string>
+    <string name="drone_date_label">Data de compra</string>
+    <string name="drone_battery_label">Capacidade da bateria</string>
+    <string name="drone_serie_label">Número de série</string>
+    <string name="register_drone_button_label">Cadastrar</string>
+    <string name="back_to_drones_label">Voltar para a lista de drones</string>
+    <string name="register_success_message">"Drone %s resgistrado com sucesso! "</string>
+    <string name="login_fail_message">Preencha todos os campos</string>
+    <string name="senha">Senha:</string>
+    <string name="logar">Fazer login</string>
+    <string name="user">Usuário:</string>
+    <string name="description">Description</string>
+    <string name="projetoButton">Mais sobre</string>
+    <string name="projetoDrones"> Mais sobre o projeto</string>
+    <string name="cadastrarButton">Cadastrar</string>
+    <string name="cadastrarDrone">Cadastrar novo drone</string>
+    <string name="textoProjeto1">A fome mundial e a escassez de alimentos são problemas complexos e urgentes
+que afetam milhões de pessoas em todo o mundo. A ONU, em seu conjunto de
+Objetivos de Desenvolvimento Sustentável (ODS), inclui o ODS 2, Fome Zero e
+Agricultura Sustentável, como uma meta para erradicar a fome e promover
+sistemas agrícolas sustentáveis até 2030.</string>
+    <string name="textoProjeto2">Muitas vezes, chamado de “celeiro do mundo”, a incorporação de soluções tecnológicas ao nosso agronegócio pode, por exemplo, ampliar ainda mais a produção agrícola brasileira.</string>
+    <string name="textoProjeto3">Por este motivo estamos criando esse aplicativo, para que posssamos facilitar o uso dos drones no agronegócio, facilitaremos os cadastros para começar a utilizar os drones,além de futuramente podermos fazer alterações para melhorar o app e vender drones modernos e de qualidade. </string>
+
+
+</resources>
