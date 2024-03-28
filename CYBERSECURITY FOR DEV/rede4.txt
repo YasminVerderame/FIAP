@@ -1,0 +1,25 @@
+1- Arquivo de config do apache em /etc/apache2/apache2.conf
+2- Fazemos uma cópia para ter um bkp: cp apache2.conf apache2.conf.old
+3- Mover o /var/www/html/index.html para o /var/www
+4- service apache2 restart
+5- Verificar se o index abre ou não -> Podemos ver as pastas
+6- nano apache2.conf -> Removemos a palavra Indexes de uma tag Directory lá em baixo
+7- Isso tira o acesso às pastas do servidor
+8- Colocamos de volta
+9- nano etc/apache2/conf-enabled/security.conf
+10- ServerTokens -> Configuração em que definimos o que podem descobrir do servidor
+11- Mudamos para modo PROD -> O sistema Operacional não fala mais
+12- service apache2 restart
+13- Voltamos para ServerTokens OS
+14- service apache2 restart
+15- ServerSignature Off -> Assinatura do Servidor
+16- service apache2 restart
+17- em /var/log/apache2 -> arquivo access.log contém todos os logs do apache2
+18- Comandos
+	cat access.log | wc -l
+	cat /etc/passwd -> usuários do linux
+	tail /etc/passwd -> 10 últimas linhas
+	head /etc/passwd -> 10 primeiras linhas
+	tail -n 4 /etc/passwd -> 4 últimas linhas
+	cat /etc/passwd | wc -l -> total de linhas no arquivo (ou seja, total de users)
+19- No access.log podemos ver várias coisas úteis: Método HTTP, código da response, porta, navegador, arquitetura etc.
