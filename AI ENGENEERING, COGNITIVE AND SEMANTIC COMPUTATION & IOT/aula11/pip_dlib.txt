@@ -1,0 +1,11 @@
+conda create -n dlib-gpu python=3.8 cmake ipython
+
+conda activate dlib-gpu
+
+pip install CMake
+
+conda install -c conda-forge dlib 
+
+pip install dlib
+
+pip install mediapipe
