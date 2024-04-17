@@ -1,5 +1,8 @@
+from tkinter import filedialog
 import cv2
 import numpy as np
+import os
+
 
 # Função de callback do mouse
 def mouse_click(event, x, y, flags, param):
@@ -16,21 +19,24 @@ def mouse_click(event, x, y, flags, param):
         # Desenha o retângulo na imagem original
         cv2.rectangle(img, points[0], points[1], (0, 255, 0), 2)
         cv2.imshow('image', img)
+        (x1, y1), (x2, y2) = points
+        roi = clone[y1:y2, x1:x2]
+        cv2.imshow('corte', roi)
+        
+        
+        k = cv2.waitKey(0)
+        if k == ord("s"): 
+            file_path = filedialog.asksaveasfilename(defaultextension=".png")
+            if file_path:  # verifica se o usuário selecionou um local válido
+                cv2.imwrite(file_path, roi)
+                print(f"Região recortada salva em '{file_path}'")
 
-        key = cv2.waitKey(1) & 0xFF
-        if key == ord('s') and len(points) == 2:
-            # Seleciona a região definida pelos pontos
-            (x1, y1), (x2, y2) = points
-            roi = clone[y1:y2, x1:x2]
 
-            # Exibe a região recortada em uma nova janela
-            cv2.imshow(roi)
+        
+        #     cv2.imwrite("regiao_recortada.png", roi)
+        #     print("Região recortada salva como 'regiao_recortada.png'")
 
-            # Salva a região selecionada como 'cropped_image.jpg' se a tecla "s" for pressionada novamente
-            key = cv2.waitKey(0) & 0xFF
-            if key == ord('s'):
-                cv2.imwrite('cropped_image.jpg', roi)
-                print("Imagem recortada salva como 'cropped_image.jpg'")
+        
 
 # Carrega a imagem
 img = cv2.imread('admiravelmundonovo.jpg')
