@@ -9,7 +9,7 @@ Este projeto implementa um sistema de detecção de máscara facial em tempo rea
 
 ## Como usar
 -  Instalar as dependências TensorFlow
-pip install opencv-python tensorflow numpy
+```pip install opencv-python tensorflow numpy```
 
 - Execute o script Python
 
