@@ -20,7 +20,7 @@ Este projeto implementa um sistema de detecção de máscara facial em tempo rea
 
 
 ## Demonstração do projeto
-<!-- adicionar aqui o vídeo dele funcionando -->
+- Vídeo do projeto está no arquivo ```demonstracao-projeto```
 
 ## Por Que Usar:
 - Promoção da Saúde Pública: A detecção de máscara facial ajuda a promover a saúde pública, incentivando o uso de máscaras como uma medida preventiva contra a propagação de doenças infecciosas, como COVID-19.
