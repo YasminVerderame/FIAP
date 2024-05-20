@@ -1,0 +1,74 @@
+Na VM:
+- Comando para instalar netcat: apt install netcat
+- Comando para ouvir em uma porta: nv -lvp porta
+- Comando para conectar a um servidor: nv -v ip porta (nc -v 192.168.1.10 1234)
+
+- Colocar a placa em modo bridge e exibir o IP que a placa capturou do servidor DHCP:
+No Kali:
+- nano /etc/network/interfaces
+allow-hotplug eth1
+iface eth1 inet dhcp
+- Reiniciar o Kali:  init 6
+- Para verificar o IP que o dhcp capturou: ip -br -c a
+   
+- Para pingar no professor: ping 10.20.23.85
+- Para copiar o arquivo do professor: nc -v 10.20.23.85 1234 > arquivoCopiado.txt
+- Para entrar no arquivo: nano arquivoCopiado.txt
+- Comando nc -help para capturar a descrição do nc -nlvp
+
+Para configurar outra rede:
+Na VM2:
+- nano /etc/network/interfaces
+- allow-hotplug enp0s9
+  iface enp0s9 inet static
+		address 192.158.100.10
+
+No Kali
+- nano /etc/network/interfaces
+- allow-hotplug eth2
+  iface eth2 inet static
+		address 192.158.100.20
+
+- Reiniciar a VM e o Kali: init 6
+- Verificar se subiu na VM e no Kali: ip -br -c a 
+- Pingar um no outro: ping 192.158.100.10 (no kali)
+		           ping 192.158.100.20 (na vm)
+
+- Executar o servidor apache:
+service apache2 start
+netstat -nltp (para verificar as portas)
+
+- Testar e verificar as portas com os requests:
+No Kali: 
+printf "OPTIONS / HTTP/1.0/r/n/r/n" | nc 192.158.100.10 
+OU
+GET / HTTP/1.1
+(escolher a porta que está no apache2 - volte na vm e execute o comando netstat -nltp)
+
+- Para criar um chat com netcat:
+Na vm: nc -lvp 1234 
+No Kali: nc -v 192.158.100.10 1234
+
+
+- Para descobrir o hash do arquivo que foi copiado:
+No Kali: md5sum arquivoCopiado.txt
+
+- Para ler o que tem no arquivo:
+nano arquivoCopiado.txt
+
+- Para criar um arquivo:
+Na vm: 
+cd Documentos - entrar na pasta Documentos
+> teste.txt - cria o arquivo txt
+ls -  lista os arquivos dentro de Documentos
+cat teste.txt - entra no arquivo
+echo “teste” > teste.txt - escreve teste no teste.txt
+cat teste.txt - mostra o que está escrito em teste.txt
+
+
+- Placas de rede:
+enp0s3 (nat)
+enp0s8 (bridge)
+enp0s9 (interna fiap)
+
+
