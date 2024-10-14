@@ -1,0 +1,18 @@
+ataque de força bruta no Kali para descobrir a senha:
+
+- ligar o foxy proxy
+- ligar o intercepion
+- colocar senha errada
+- enviar a senha para o intruder (clicar com botão direito e seleciona send to intruder)
+- no positions tem que marcar o campo que você quer adivinhar (selecionar senha e clicar em add)
+- no payload adicionar palavras erradas e a senha certa no "payload settings [Simple list]"
+- no settings, limpar o grep - match e adicionar mensagem de erro quando o login está errado -- não pode colocar acento
+- iniciar ataque do tipo sniper
+--- quando o número for 1, a senha está incorreta. quando for 0 ou vazio, é a senha correta
+
+
+ataque de força bruta no Kali para descobrir usuário e senha:
+- no positions tem que marcar o campo que você quer adivinhar (selecionar usuario e senha e clicar em add)
+- no payload sets, o 1 será o user e o 2 será a senha
+- no payload adicionar palavras erradas e a certa no "payload settings [Simple list]"
+- iniciar ataque do tipo cluster bomb
